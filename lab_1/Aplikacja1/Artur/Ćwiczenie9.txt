@@ -8,22 +8,14 @@
 .assembly extern System.Console
 
 5.
-.module Artur.dll
 // MVID: {0E213AE4-28E0-45ED-A778-6A0B94AB55E2}
-.imagebase 0x00400000
-.file alignment 0x00000200
-.stackreserve 0x00100000
-.subsystem 0x0003       // WINDOWS_CUI
-.corflags 0x00000001    //  ILONLY
-// Image base: 0x047B0000
-
 
 7.
 .method private hidebysig static void  Main(string[] args) cil managed
 {
-  .entrypoint
+  .entrypoint           // Function entrypoint
   // Code size       13 (0xd)
-  .maxstack  8
+  .maxstack  8          // Define a maxstack size
   IL_0000:  nop         // Do nothing
   IL_0001:  ldstr      "Hello World!" // load the string object in the first argument to the top of the stack.
   IL_0006:  call       void [System.Console]System.Console::WriteLine(string)   // Function call
