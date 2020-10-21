@@ -1,0 +1,78 @@
+#2.7
+
+// Metadata version: v4.0.30319
+.assembly extern netstandard
+{
+  .publickeytoken = (CC 7B 13 FF CD 2D DD 51 )                         // .{...-.Q
+  .ver 2:0:0:0
+}
+.assembly ClassLibrary1
+{
+  .custom instance void [netstandard]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = ( 01 00 08 00 00 00 00 00 ) 
+  .custom instance void [netstandard]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::.ctor() = ( 01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78   // ....T..WrapNonEx
+                                                                                                                63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01 )       // ceptionThrows.
+
+  // --- The following custom attribute is added automatically, do not uncomment -------
+  //  .custom instance void [netstandard]System.Diagnostics.DebuggableAttribute::.ctor(valuetype [netstandard]System.Diagnostics.DebuggableAttribute/DebuggingModes) = ( 01 00 07 01 00 00 00 00 ) 
+
+  .custom instance void [netstandard]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 19 2E 4E 45 54 53 74 61 6E 64 61 72 64 2C   // ....NETStandard,
+                                                                                                           56 65 72 73 69 6F 6E 3D 76 32 2E 30 01 00 54 0E   // Version=v2.0..T.
+                                                                                                           14 46 72 61 6D 65 77 6F 72 6B 44 69 73 70 6C 61   // .FrameworkDispla
+                                                                                                           79 4E 61 6D 65 00 )                               // yName.
+  .custom instance void [netstandard]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 0D 43 6C 61 73 73 4C 69 62 72 61 72 79 31   // ...ClassLibrary1
+                                                                                                   00 00 ) 
+  .custom instance void [netstandard]System.Reflection.AssemblyConfigurationAttribute::.ctor(string) = ( 01 00 05 44 65 62 75 67 00 00 )                   // ...Debug..
+  .custom instance void [netstandard]System.Reflection.AssemblyFileVersionAttribute::.ctor(string) = ( 01 00 07 31 2E 30 2E 30 2E 30 00 00 )             // ...1.0.0.0..
+  .custom instance void [netstandard]System.Reflection.AssemblyInformationalVersionAttribute::.ctor(string) = ( 01 00 05 31 2E 30 2E 30 00 00 )                   // ...1.0.0..
+  .custom instance void [netstandard]System.Reflection.AssemblyProductAttribute::.ctor(string) = ( 01 00 0D 43 6C 61 73 73 4C 69 62 72 61 72 79 31   // ...ClassLibrary1
+                                                                                                   00 00 ) 
+  .custom instance void [netstandard]System.Reflection.AssemblyTitleAttribute::.ctor(string) = ( 01 00 0D 43 6C 61 73 73 4C 69 62 72 61 72 79 31   // ...ClassLibrary1
+                                                                                                 00 00 ) 
+  .hash algorithm 0x00008004
+  .ver 1:0:0:0
+}
+.module ClassLibrary1.dll
+// MVID: {D356BA51-F1C2-4402-BF12-86A8CAA6C89F}
+.imagebase 0x10000000
+.file alignment 0x00000200
+.stackreserve 0x00100000
+.subsystem 0x0003       // WINDOWS_CUI
+.corflags 0x00000001    //  ILONLY
+// Image base: 0x07180000
+
+
+#2.14
+.assembly extern ClassLibrary1
+{
+  .ver 1:0:0:0
+}
+
+#3.10
+  .publickey = (00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00   // .$..............
+                00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00   // .$..RSA1........
+                4D 8F 99 97 00 84 8C 3B DD B2 BC D3 8C A6 52 49   // M......;......RI
+                EB 5C AF 41 71 D0 51 CD 41 75 95 CC 7A 81 49 8F   // .\.Aq.Q.Au..z.I.
+                7A A4 F4 FF EA F0 B0 DD 5B 4C 9F FF FF 43 DE 19   // z.......[L...C..
+                26 FE 70 92 9A C4 32 03 4A 12 FE 3C 3D A7 DD 6D   // &.p...2.J..<=..m
+                B3 43 BE D9 48 26 97 91 E9 E8 20 64 1A CC 41 6F   // .C..H&.... d..Ao
+                BB 04 41 35 F3 EA 34 23 03 7B D2 EC 5F 8E 20 44   // ..A5..4#.{.._. D
+                D0 65 14 56 51 67 95 63 79 E5 A8 99 91 D0 DB 67   // .e.VQg.cy......g
+                D5 B2 F0 99 6F 1A BD A6 89 97 DC C5 3C E0 E9 CC ) // ....o.......<...
+
+# 3.12
+Wersja: 1.0.0.0
+
+
+
+# 4.12
+.assembly extern ClassLibrary1
+{
+  .publickeytoken = (DA 87 8E 2C 61 F6 69 7B )                         // ...,a.i{
+  .ver 1:0:0:0
+}
+.assembly extern ClassLibrary1
+{
+  .publickeytoken = (DA 87 8E 2C 61 F6 69 7B )                         // ...,a.i{
+  .ver 1:1:0:0
+}
+
