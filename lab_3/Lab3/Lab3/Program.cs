@@ -16,14 +16,14 @@ namespace Lab3
 
     class App
     {
-        protected Point[] centers;
-        protected Point point;
+        protected Point2D[] centers;
+        protected Point2D point;
         protected double radius = 4;
         protected int centersCnt = 4;
 
         public App()
         {
-            this.centers = new Point[this.centersCnt];
+            this.centers = new Point2D[this.centersCnt];
         }
 
         public void Main()
@@ -50,7 +50,7 @@ namespace Lab3
                 double x = Double.Parse(Console.ReadLine());
                 double y = Double.Parse(Console.ReadLine());
 
-                this.point = new Point(x, y);
+                this.point = new Point2D(x, y);
 
                 if (x < 0 || y < 0 )
                 {
@@ -89,12 +89,12 @@ namespace Lab3
             return a;
         }
 
-        protected Point getPointFromConsole()
+        protected Point2D getPointFromConsole()
         {
             double x = this.getDoubleFromConsole();
             double y = this.getDoubleFromConsole();
 
-            return new Point(x, y);
+            return new Point2D(x, y);
         }
 
         protected Boolean isPointInRadius()

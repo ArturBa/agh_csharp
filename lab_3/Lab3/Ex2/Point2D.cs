@@ -1,20 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using System.Threading;
+using System.Threading.Tasks;
 
-namespace Lab3
+namespace Ex2
 {
-    struct Point
+    struct Point2D
     {
-        double x;
-        double y;
-
-        public Point(double x = 0, double y = 0)
-        {
-            this.x = x;
-            this.y = y;
-        }
+        private double x;
+        private double y;
 
         public void Reset()
         {
@@ -36,7 +31,7 @@ namespace Lab3
             Console.WriteLine("X: {0:0.00}\tY: {1:0.00}", this.x, this.y);
         }
 
-        public double Dist(Point point)
+        public double Dist(Point2D point)
         {
             return Math.Pow(Math.Pow(this.x - point.x, 2) + Math.Pow(this.y - point.y, 2), .5);
         }
