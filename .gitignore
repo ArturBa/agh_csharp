@@ -517,3 +517,5 @@ MigrationBackup/
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp,visualstudio
 *.docx
+*.zip
+lab_requirments.png
