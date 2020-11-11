@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{611E4263-8F61-43D5-BE3A-935037D8B7F2}</ProjectGuid>
+    <ProjectGuid>{0A630088-B094-4249-88D1-7BB91DE8E980}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ex6</RootNamespace>
-    <AssemblyName>Ex6</AssemblyName>
+    <RootNamespace>Ex9</RootNamespace>
+    <AssemblyName>Ex9</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book.cs" />
+    <Compile Include="BookLibrary.cs">
+      <Generator>BookLibrary</Generator>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

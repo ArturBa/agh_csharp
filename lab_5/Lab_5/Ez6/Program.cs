@@ -4,13 +4,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ez6
+namespace Ex6
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Stack<int> stack = new Stack<int>();
+            Stack<int> stack0 = new Stack<int>();
+            Stack<int> stack1= new Stack<int>();
+
+            Random r = new Random();
+
+            for(int i = 0; i < 100; i++)
+            {
+                stack0.AddItem(r.Next(0, 200));
+                stack1.AddItem(r.Next(0, 200));
+            }
+
+            Stack<int> stack2 = new Stack<int>();
+
+            while (stack0.ShowTheNumberOfItems() != 0)
+            {
+                int a = stack0.RemoveItem();
+                if(stack2.FindAnItem(a) != 1)
+                {
+                    stack2.AddItem(a);
+                }
+            }
+            while (stack1.ShowTheNumberOfItems() != 0)
+            {
+                int a = stack1.RemoveItem();
+                if(stack2.FindAnItem(a) != 1)
+                {
+                    stack2.AddItem(a);
+                }
+            }
+            stack2.PrintAllItems();
+            Console.ReadLine();
         }
     }
 
