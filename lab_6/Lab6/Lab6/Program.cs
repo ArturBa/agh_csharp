@@ -12,7 +12,7 @@ namespace Lab6
             xmasTree.Add(Color.blue, Shape.ball);
             Console.WriteLine("Bauble color: {0}", xmasTree[0]);
             Console.WriteLine("Baubles in color ({0}): {1}", Color.blue, xmasTree[Color.blue]);
-            xmasTree[0] = Color.yellow;
+            xmasTree[0] = Color.yellow.ToString();
             Console.WriteLine("Color changed");
             Console.WriteLine("Bauble color: {0}", xmasTree[0]);
 
@@ -81,23 +81,23 @@ namespace Lab6
             baubles.RemoveAt(index);
         }
 
-        public Color this[int index] {
-            get => baubles[index].color;
-            set => baubles[index].color = value;
+        public virtual string this[int index] {
+            get => baubles[index].color.ToString();
+            set => baubles[index].color = Color.yellow;
         }
-        public int this[Color color] {
+        public virtual int this[Color color] {
             get => baubles.FindAll(bouble => bouble.color == color).Count;
         }
     }
 
     class ChristmasTreeA: ChristmasTree
     {
-        public Shape this[int index]
+        public override string this[int index]
         {
-            get => baubles[index].shape;
+            get => baubles[index].shape.ToString();
         }
 
-        public Color BaubleColor(int index)
+        public string BaubleColor(int index)
         {
             return base[index];
         }
@@ -112,7 +112,6 @@ namespace Lab6
                 return b.color.ToString() + "_" + b.shape.ToString();
             }
         }
-    
     }
 
     sealed class ChristmasTreeC: ChristmasTreeB
