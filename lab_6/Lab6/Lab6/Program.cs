@@ -83,7 +83,7 @@ namespace Lab6
 
         public virtual string this[int index] {
             get => baubles[index].color.ToString();
-            set => baubles[index].color = Color.yellow;
+            set => baubles[index].color = (Color) Enum.Parse(typeof(Color), value, true);
         }
         public virtual int this[Color color] {
             get => baubles.FindAll(bouble => bouble.color == color).Count;
